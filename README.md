@@ -5,3 +5,6 @@ Things to add:
 - [ ] Flashcards
 - [ ] A homepage
 - [ ] Add mcq system for problems
+- [ ] Add problems
+- [ ] Fix about section
+- [ ] organize everything idk mate put sm else here 😭
