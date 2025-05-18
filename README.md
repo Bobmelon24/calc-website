@@ -7,4 +7,5 @@ Things to add:
 - [ ] Add mcq system for problems
 - [ ] Add problems
 - [ ] Fix about section
+- [ ] Neil is hot 🥵🥵🥵
 - [ ] organize everything idk mate put sm else here 😭
