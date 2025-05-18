@@ -5,23 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calc Website</title>
 
-    <!-- Tailwind CSS -->
+    <!-- Tailwind CSS 
     <script src="https://cdn.tailwindcss.com"></script>
-
+-->
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css" />
 </head>
-<body class="bg-gray-100 min-h-screen flex items-center justify-center p-4">
-    <main class="bg-white shadow-lg rounded-lg p-6 max-w-md w-full text-center">
-        <h1 class="text-2xl font-bold text-blue-600 mb-4">Welcome to Our Calc Website</h1>
-     <p class="mb-4 text-gray-700">This is a collaborative website built with HTML, CSS, and JavaScript!</p>
-     <button 
-        onclick="showMessage()" 
-        class="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-4 py-2 rounded transition"
-        >
-        Click Me
-        </button>
-        <p id="output" class="mt-4 text-green-600 font-medium"></p>
+<body>
+    <main class="container">
+        <h1>Welcome to Our Calc Website</h1>
+        <p>This is a collaborative website built with HTML, CSS, and JavaScript!</p>
+        <button onclick="showMessage()">Click Me</button>
+        <p id="output"></p>
     </main>
     <script src="script.js"></script>
 </body>
