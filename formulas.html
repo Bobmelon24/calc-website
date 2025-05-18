@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calc Website</title>
 
+    <!-- LaTeX Formatting-->
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+
     <!-- Tailwind CSS 
     <script src="https://cdn.tailwindcss.com"></script>
 -->
@@ -24,91 +27,104 @@
         <p>Welcome to Formulas! <br> Here you'll find all the formulas and references needed for your studies!</p>
         <div class="dropdown">
             <button class="dropdown-btn">Unit 1: Limits and Continuity</button>
-             <div class="dropdown-content">
+            <div class="dropdown-content">
                 <ul>
-                    <li>formula 1 + def</li>
-                    <li>formula 2 + def</li>
-                    <li>formula 3 + def</li>
+                    <li>Limit definition: \(\lim_{x \to a} f(x) = L\)</li>
+                    <li>One-sided limits: \(\lim_{x \to a^-} f(x), \lim_{x \to a^+} f(x)\)</li>
+                    <li>Continuity at \(x=a\): \(\lim_{x \to a} f(x) = f(a)\)</li>
+                    <li>Intermediate Value Theorem (IVT): If \(f\) continuous on \([a,b]\) and \(N\) between \(f(a)\) and \(f(b)\), \(\exists c \in (a,b)\) s.t. \(f(c) = N\)</li>
                 </ul>
-             </div>
+            </div>
         </div>
 
         <div class="dropdown">
-             <button class="dropdown-btn">Unit 2: Differentiation: Definition and Basic Derivative Rules</button>
-             <div class="dropdown-content">
+            <button class="dropdown-btn">Unit 2: Differentiation: Definition and Basic Derivative Rules</button>
+            <div class="dropdown-content">
                 <ul>
-                    <li>formula 1 + def</li>
-                    <li>formula 2 + def</li>
-                    <li>formula 3 + def</li>
+                    <li>Definition of derivative: \(f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}\)</li>
+                    <li>Tangent line: \(y - f(a) = f'(a)(x - a)\)</li>
+                    <li>Power Rule: \(\frac{d}{dx}[x^n] = nx^{n-1}\)</li>
+                    <li>Constant Rule: \(\frac{d}{dx}[c] = 0\)</li>
                 </ul>
-             </div>
+            </div>
         </div>
 
         <div class="dropdown">
-             <button class="dropdown-btn">Unit 3: Differentiation: Composite, Implicit, and Inverse Functions</button>
-             <div class="dropdown-content">
+            <button class="dropdown-btn">Unit 3: Differentiation: Composite, Implicit, and Inverse Functions</button>
+            <div class="dropdown-content">
                 <ul>
-                    <li>formula 1 + def</li>
-                    <li>formula 2 + def</li>
-                    <li>formula 3 + def</li>
+                    <li>Product Rule: \((fg)' = f'g + fg'\)</li>
+                    <li>Quotient Rule: \(\left(\frac{f}{g}\right)' = \frac{f'g - fg'}{g^2}\)</li>
+                    <li>Chain Rule: \(\frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx}\)</li>
+                    <li>Derivatives of trig functions:  
+                        \(\frac{d}{dx}[\sin x] = \cos x\),  
+                        \(\frac{d}{dx}[\cos x] = -\sin x\),  
+                        \(\frac{d}{dx}[\tan x] = \sec^2 x\),
+                        \(\frac{d}{dx}[\sec x] = \sec x\tan x\),  
+                        \(\frac{d}{dx}[\csc x] = -\csc x\cot x\),  
+                        \(\frac{d}{dx}[\cot x] = -\csc^2 x\)</li>
                 </ul>
-             </div>
+            </div>
         </div>
 
         <div class="dropdown">
-             <button class="dropdown-btn">Unit 4: Contextual Applications of Differentiation</button>
-             <div class="dropdown-content">
+            <button class="dropdown-btn">Unit 4: Contextual Applications of Differentiation</button>
+            <div class="dropdown-content">
                 <ul>
-                    <li>formula 1 + def</li>
-                    <li>formula 2 + def</li>
-                    <li>formula 3 + def</li>
+                    <li>Related rates: Differentiate implicitly w.r.t time \(t\)</li>
+                    <li>Velocity and acceleration: \(v(t) = s'(t)\), \(a(t) = v'(t) = s''(t)\)</li>
+                    <li>Linear approximation: \(f(x) \approx f(a) + f'(a)(x - a)\)</li>
+                    <li>Optimization: Use derivatives to find maxima/minima</li>
                 </ul>
-             </div>
+            </div>
         </div>
 
         <div class="dropdown">
-             <button class="dropdown-btn">Unit 5: Analytical Applications of Differentiation</button>
-             <div class="dropdown-content">
+            <button class="dropdown-btn">Unit 5: Analytical Applications of Differentiation</button>
+            <div class="dropdown-content">
                 <ul>
-                    <li>formula 1 + def</li>
-                    <li>formula 2 + def</li>
-                    <li>formula 3 + def</li>
+                    <li>Critical points: \(f'(x) = 0\) or undefined</li>
+                    <li>Mean Value Theorem (MVT): \(f'(c) = \frac{f(b)-f(a)}{b-a}\)</li>
+                    <li>First Derivative Test — determines increasing/decreasing</li>
+                    <li>Second Derivative Test — determines concavity and points of inflection</li>
                 </ul>
-             </div>
+            </div>
         </div>
 
         <div class="dropdown">
-             <button class="dropdown-btn">Unit 6: Integration and Accumulation of Change</button>
-             <div class="dropdown-content">
+            <button class="dropdown-btn">Unit 6: Integration and Accumulation of Change</button>
+            <div class="dropdown-content">
                 <ul>
-                    <li>formula 1 + def</li>
-                    <li>formula 2 + def</li>
-                    <li>formula 3 + def</li>
+                    <li>Indefinite integral: \(\int f(x)\,dx = F(x) + C\)</li>
+                    <li>Definite integral: \(\int_a^b f(x)\,dx = F(b) - F(a)\)</li>
+                    <li>Fundamental Theorem of Calculus: \(\frac{d}{dx} \left(\int_a^x f(t) dt \right) = f(x)\)</li>
+                    <li>Average value: \(\frac{1}{b-a} \int_a^b f(x) dx\)</li>
                 </ul>
-             </div>
+            </div>
         </div>
 
         <div class="dropdown">
-             <button class="dropdown-btn">Unit 7: Differential Equations</button>
-             <div class="dropdown-content">
+            <button class="dropdown-btn">Unit 7: Differential Equations</button>
+            <div class="dropdown-content">
                 <ul>
-                    <li>formula 1 + def</li>
-                    <li>formula 2 + def</li>
-                    <li>formula 3 + def</li>
+                    <li>Separation of variables: \(\frac{dy}{dx} = g(x)h(y) \Rightarrow \frac{1}{h(y)} dy = g(x) dx\)</li>
+                    <li>Slope fields visualize solutions of \( \frac{dy}{dx} = f(x,y) \)</li>
+                    <li>Exponential growth/decay: \(\frac{dy}{dt} = ky \Rightarrow y = Ce^{kt}\)</li>
                 </ul>
-             </div>
+            </div>
         </div>
-        
+
         <div class="dropdown">
-             <button class="dropdown-btn">Unit 8: Applications of Integration</button>
-             <div class="dropdown-content">
+            <button class="dropdown-btn">Unit 8: Applications of Integration</button>
+            <div class="dropdown-content">
                 <ul>
-                    <li>formula 1 + def</li>
-                    <li>formula 2 + def</li>
-                    <li>formula 3 + def</li>
+                    <li>Area between curves: \(\int_a^b [f(x) - g(x)] dx\)</li>
+                    <li>Volume (Disk): \(V = \pi \int_a^b [r(x)]^2 dx\)</li>
+                    <li>Volume (Washer): \(V = \pi \int_a^b [R(x)^2 - r(x)^2] dx\)</li>
+                    <li>Volume (Shell): \(V = 2\pi \int_a^b (radius)(height) dx\)</li>
                 </ul>
-             </div>
-        </section>
+            </div>
+        </div>
     </main>
     <script src="script.js"></script>
 </body>
