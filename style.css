@@ -62,3 +62,17 @@ ul.topnav li.right {float: right;}
   ul.topnav li.right, 
   ul.topnav li {float: none;}
 }
+
+.authors-container {
+    display: flex;
+    gap: 20px;          /* space between authors */
+    justify-content: center; /* center the authors horizontally */
+}
+
+.author {
+    flex: 1;            /* each author takes equal width */
+    background-color: #f9f9f9;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
