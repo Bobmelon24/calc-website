@@ -7,5 +7,6 @@ Things to add:
 - [ ] Add mcq system for problems
 - [ ] Add problems
 - [ ] Fix about section
-- [ ] Neil is hot 🥵🥵🥵
+- [x] Neil is hot 🥵🥵🥵
+- [ ] Ben is French 🇫🇷🇫🇷🇫🇷🇫🇷🇫🇷
 - [ ] organize everything idk mate put sm else here 😭
