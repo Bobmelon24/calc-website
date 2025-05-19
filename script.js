@@ -5,7 +5,7 @@ function showMessage() {
 
 //for seperate nav to change active class
 window.addEventListener('DOMContentLoaded', () => {
-    fetch('assets/topnav.html')
+    fetch('elements/topnav.html')
         .then(response => response.text())
         .then(data => {
             document.getElementById('nav-placeholder').innerHTML = data;
