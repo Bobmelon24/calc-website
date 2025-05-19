@@ -1,3 +1,4 @@
+/* main */
 body {
     font-family: system-ui, sans-serif;
     background-color: #f0f4f8;
@@ -16,6 +17,7 @@ body {
     text-align: center;
 }
 
+/* topnav */
 ul.topnav {
   list-style-type: none;
   margin: 0;
@@ -48,6 +50,7 @@ ul.topnav li.right {float: right;}
   ul.topnav li {float: none;}
 }
 
+/* author cards */
 .authors-container {
     display: flex;
     gap: 20px;          /* space between authors */
@@ -62,8 +65,7 @@ ul.topnav li.right {float: right;}
     box-shadow: 0 0 8px rgba(0,0,0,0.1);
 }
 
-
-/* Dropdown Component */
+/* dropdowns */
 .dropdown {
   margin-bottom: 16px;
   border: 1px solid #ccc;
@@ -122,3 +124,73 @@ ul.topnav li.right {float: right;}
   border-bottom-right-radius: 0;
 }
 
+/* homepage cards */
+.card-section {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  background-color: #ffffff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.05);
+}
+
+.card.reverse {
+  flex-direction: row-reverse;
+}
+
+.card-img {
+  flex: 1;
+  min-width: 200px;
+  max-width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.card-img img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.card-img:hover {
+  transform: scale(1.03);
+}
+
+.card-text {
+  flex: 2;
+  text-align: left;
+}
+
+.card-text h2 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 1.5rem;
+  color: #000dff;
+}
+
+.card-text p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .card, .card.reverse {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .card.reverse .card-img,
+  .card.reverse .card-text {
+    order: unset;
+  }
+}
